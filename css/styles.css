@@ -1,0 +1,232 @@
+/* цвет основного текста #757575 */
+/* вторичный цвет текста  #212121;
+     /* акцент #2196F3 */
+/* цвет фона ##FFFFFF */
+/* вторичный цвет фона #F5F4FA */
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: ;
+  --title-text-color: #212121;
+  --secondary-title-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+/* ------------------------Хедер---------------------------- */
+.accent {
+  color: var(--accent-color);
+}
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.nav-link,
+.contacts-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--title-text-color);
+}
+
+.nav-link.current {
+  color: var(--accent-color);
+}
+
+.contacts-link {
+  color: var(--primary-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* --------------------Герой--------------------------- */
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
+
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
+
+/* ---------------------- Преимущества ----------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.features-text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ---------------------Чем мы занимаемся------------------ */
+.doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/* ------------------ Наша команда------------------------ */
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-item-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ----------------------Футер ----------------------- */
+.futer {
+  background-color: #2f303a;
+  color: var(--secondary-title-color);
+}
+
+.futer .logo {
+  color: var(--secondary-title-color);
+}
+
+.futer-address {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.futer-address-link {
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.futer-address-link:hover,
+.futer-address-link:focus {
+  color: var(--accent-color);
+}
+
+/* -----------------Страница Портфолио------------------- */
+.filters-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: var(--secondary-bg-color);
+  color: var(--title-text-color);
+}
+
+.filters-btn:focus,
+.filters-btn:hover {
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.project-group {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
