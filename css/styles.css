@@ -132,8 +132,6 @@ a {
 }
 
 .header .logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
   margin-right: 93px;
 }
 
@@ -151,8 +149,6 @@ a {
   display: flex;
   gap: var(--card-gap);
 }
-.nav-item {
-}
 
 .contacts-list {
   margin-left: auto;
@@ -160,6 +156,7 @@ a {
 
 .nav-link,
 .contacts-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -195,7 +192,7 @@ a {
 }
 
 .hero-title {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   max-width: 696px;
@@ -294,19 +291,23 @@ a {
 }
 
 .footer .logo {
+  display: block;
   margin-bottom: 20px;
 }
 
 .footer-address {
-  margin-top: 20px;
   color: var(--secondary-title-color);
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
+.footer-address-list,
+.footer-address-item + .footer-address-item {
+  margin-top: 9px;
+}
+
 .footer-address-link {
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -318,7 +319,6 @@ a {
 /* -----------------Страница Портфолио------------------- */
 .filters-list {
   display: flex;
-  gap: 8;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -328,6 +328,10 @@ a {
 }
 
 .filters-btn {
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -342,7 +346,7 @@ a {
   background-color: var(--accent-color);
 }
 
-.projects-desc {
+.projects-wrap {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
