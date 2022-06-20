@@ -54,9 +54,9 @@ a {
 }
 
 .container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1200px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   margin: 0 auto;
 }
 
@@ -123,11 +123,12 @@ a {
 }
 
 /* ------------------------Хедер---------------------------- */
+.heder {
+  border-bottom: 1px solid #ececec;
+}
 .header .container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
-
   align-items: center;
 }
 
@@ -263,8 +264,8 @@ a {
 .team-info {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .team-item-title {
