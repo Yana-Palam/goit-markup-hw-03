@@ -55,8 +55,8 @@ a {
 
 .container {
   width: 1200px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -111,7 +111,7 @@ a {
 
 .card-set-item {
   flex-basis: calc(
-    (100% - ((var(--card-item)-1)) * var(--card-gap)) / var(--card-item)
+    ((100% - (var(--card-item) - 1) * var(--card-gap))) / var(--card-item)
   );
 }
 
@@ -123,12 +123,11 @@ a {
 }
 
 /* ------------------------Хедер---------------------------- */
-.heder {
+.header {
   border-bottom: 1px solid #ececec;
 }
 .header .container {
   display: flex;
-  align-items: center;
   align-items: center;
 }
 
@@ -148,7 +147,7 @@ a {
 .nav-list,
 .contacts-list {
   display: flex;
-  gap: var(--card-gap);
+  gap: 50px;
 }
 
 .contacts-list {
